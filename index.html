@@ -458,6 +458,8 @@ ${praise}
 ・ターゲット（どんな未来を求めている誰か）：
 ・ベネフィット（この商品を買うと得られる究極の未来）：
 ・なぜ私が教える資格があるのか（人生の経験の再定義）：
+・🚀 具体的な商品のイメージ（例：どんな講座、お茶会、代行サービスになるか）：
+・💰 マネタイズの第一歩（ゼロイチ初心者が、まず何でお金を稼げばいいか）：
 
 ■ パターン2（ニッチ：少しずらして競合を避ける切り口）：
 〜（上記と同じ）〜
@@ -468,7 +470,7 @@ ${praise}
 # 留意事項
 ・女性が直感的に「ほしい！」「私でも変われるかも！」と思えるような、エモーショナルでワクワクする表現を使ってください。
 ・ただのノウハウ提供ではなく、「新しい自分のライフスタイルが手に入ること」を強調してください。
-・専門用語は使わず、中学生でもイメージできる言葉にしてください。`;
+・ビジネス未経験（ゼロイチ）の人でも「これなら私にもできそう！仕事のイメージが湧いた！」と思えるように、「具体的な商品」と「マネタイズの第一歩」は超・具体的に書いてください。極力専門用語は使わず、中学生でもわかる言葉にしてください。`;
 
             const outputDiv = document.getElementById('prompt-output');
             outputDiv.textContent = template;
@@ -483,7 +485,7 @@ ${praise}
 
             // Reset button state
             const btnCopy = document.getElementById('btn-copy');
-            btnCopy.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> プロンプトをコピー`;
+            btnCopy.innerHTML = `< svg width = "18" height = "18" fill = "none" stroke = "currentColor" stroke-width="2" stroke - linecap="round" stroke - linejoin="round" viewBox = "0 0 24 24" ><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg > プロンプトをコピー`;
             btnCopy.classList.remove('copied');
         }
 
@@ -491,7 +493,7 @@ ${praise}
             const textToCopy = document.getElementById('prompt-output').textContent;
             navigator.clipboard.writeText(textToCopy).then(() => {
                 const btnCopy = document.getElementById('btn-copy');
-                btnCopy.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> コピー完了！`;
+                btnCopy.innerHTML = `< svg width = "18" height = "18" fill = "none" stroke = "currentColor" stroke - width="2" stroke - linecap="round" stroke - linejoin="round" viewBox = "0 0 24 24" > <polyline points="20 6 9 17 4 12"></polyline></svg > コピー完了！`;
                 btnCopy.classList.add('copied');
             }).catch(err => {
                 console.error('Failed to copy: ', err);
